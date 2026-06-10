@@ -15,23 +15,23 @@
 
 \section{Task Description}
 
-My contributions to the NOvA Production 6 Validation Task Force focused on comparing simulation productions and validating cross-section systematics. The work progressed through four main studies:
+My contributions to the NOvA Production 6 Validation Task Force focused on comparing variables (truth and reco) at the caf level and validating cross-section systematics. The work progressed through four main studies:
 
 \medskip
 
-\textbf{MiniProd6 vs Prod6 (GENIE MFP knob):} The first study compared Data/MC agreement between MiniProd6.1 and Prod6 using reconstructed hadronic energy (\texttt{reco ehad}). The key difference between the two productions was the GENIE mean free path (MFP) knob: Prod6 uses the nominal value of 0.4, while MiniProd6.1 uses MFP~=~1.0. A lower MFP means nucleons travel a shorter distance before re-interacting, resulting in fewer protons escaping the nucleus and less hadronic energy deposited in the detector, shifting events into lower energy bins. See~\cite{gnissen-miniprod6-prod6}.
+\textbf{MiniProd6 vs Prod6 (GENIE MFP knob):} The first study compared Data/MC agreement between MiniProd6.1 and Prod6 using reconstructed hadronic energy (\texttt{reco ehad}). The key difference between the two productions was the GENIE mean free path (MFP) knob: Prod6 uses the nominal value of 0.4, while MiniProd6.1 uses MFP~=~1.0. A lower MFP means nucleons travel a shorter distance before re-interacting, resulting in fewer protons escaping the nucleus and less hadronic energy deposited in the detector, shifting events into lower energy bins. A result of this study (as well as many others on docdb from Bryan and Jeremy) showed we shouldn't move the knob to MFP~=~1.0 and we decided to keep it at the nominal value of 0.4. See~\cite{gnissen-miniprod6-prod6}.
 
 \medskip
 
-\textbf{$q_3$-$q_0$ Space: Truth vs Reco (Prod6):} The second study examined the $q_3$-$q_0$ kinematic space in Prod6, comparing truth-level and reconstructed variables. The motivation was to explore a 2D Gaussian tune in this space and to confirm that MEC (Meson Exchange Current) changes in Prod6 are visible in the 2D distribution. See~\cite{gnissen-q3q0}.
+\textbf{$q_3$-$q_0$ Space: Truth vs Reco (Prod6):} The second study examined the $q_3$-$q_0$ kinematic space in Prod6, comparing truth-level and reconstructed variables. The motivation was to explore a 2D Gaussian tune in this space as in Prod5.1 this was the space a MEC (Meson Exchange Current) tune was applied. This also confirmed that MEC changes in Prod6 are visible in the 2D distribution. Prod 6 shows only one gaussian in this space which is what we expect from the MEC change of Valencia to SuSaV2. See~\cite{gnissen-q3q0}.
 
 \medskip
 
-\textbf{NuTree Variables: Prod5.1 vs Prod6:} A comparison of key NuTree variables between Prod5.1 and Prod6, presented in the context of the 3-Flavor parallel but motivated by Prod6 validation. The goal was to identify variables that could be used for tuning and understand how the production change manifests in the NuTree. See~\cite{gnissen-nutree}.
+\textbf{NuTree Variables: Prod5.1 vs Prod6:} A comparison of key NuTree variables between Prod5.1 and Prod6, presented in the context of the 3-Flavor parallel but motivated by Prod6 validation. Variables are overlapped to show how they change between Prod5.1 and Prod6 to confirm our model changes are visible in the caf files, as well as broken down by interaction channel. In the backup slides the Rec tree truth variables are available.  See~\cite{gnissen-nutree}.
 
 \medskip
 
-\textbf{Prod6 Cross-Section Systematics Validation in CAFs:} The most recent study validated that cross-section systematics originally developed for DUNE also function correctly when applied to NOvA CAFs. While these systematics had been confirmed in earlier-stage files, this work confirmed they propagate correctly to the end-of-chain CAF level. See~\cite{gnissen-xsecsyst}.
+\textbf{Prod6 Cross-Section Systematics Validation in CAFs:} The most recent study validated that cross-section systematics from NuSystematics also function correctly when applied to NOvA CAFs. While these systematics had been confirmed in earlier-stage files, this work confirmed they propagate correctly to the end-of-chain CAF level. See~\cite{gnissen-xsecsyst}.
 
 \section{Relevant DocDB References}
 
