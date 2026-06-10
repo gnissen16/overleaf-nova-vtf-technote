@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[numbers]{natbib}
+\usepackage{listings}
+
+\title{NOvA Production 6 Validation Task Force Contribution Summary}
+\author{Georgia Nissen}
+
+\begin{document}
+\maketitle
+
+\section{Task Description}
+
+My contributions to the NOvA Production 6 Validation Task Force focused on comparing simulation productions and validating cross-section systematics. The work progressed through four main studies:
+
+\medskip
+
+\textbf{MiniProd6 vs Prod6 (GENIE MFP knob):} The first study compared Data/MC agreement between MiniProd6.1 and Prod6 using reconstructed hadronic energy (\texttt{reco ehad}). The key difference between the two productions was the GENIE mean free path (MFP) knob: Prod6 uses the nominal value of 0.4, while MiniProd6.1 uses MFP~=~1.0. A lower MFP means nucleons travel a shorter distance before re-interacting, resulting in fewer protons escaping the nucleus and less hadronic energy deposited in the detector, shifting events into lower energy bins. See~\cite{gnissen-miniprod6-prod6}.
+
+\medskip
+
+\textbf{$q_3$-$q_0$ Space: Truth vs Reco (Prod6):} The second study examined the $q_3$-$q_0$ kinematic space in Prod6, comparing truth-level and reconstructed variables. The motivation was to explore a 2D Gaussian tune in this space and to confirm that MEC (Meson Exchange Current) changes in Prod6 are visible in the 2D distribution. See~\cite{gnissen-q3q0}.
+
+\medskip
+
+\textbf{NuTree Variables: Prod5.1 vs Prod6:} A comparison of key NuTree variables between Prod5.1 and Prod6, presented in the context of the 3-Flavor parallel but motivated by Prod6 validation. The goal was to identify variables that could be used for tuning and understand how the production change manifests in the NuTree. See~\cite{gnissen-nutree}.
+
+\medskip
+
+\textbf{Prod6 Cross-Section Systematics Validation in CAFs:} The most recent study validated that cross-section systematics originally developed for DUNE also function correctly when applied to NOvA CAFs. While these systematics had been confirmed in earlier-stage files, this work confirmed they propagate correctly to the end-of-chain CAF level. See~\cite{gnissen-xsecsyst}.
+
+\section{Relevant DocDB References}
+
+\begin{itemize}
+    \item MiniProd6 Compared with Prod6~\cite{gnissen-miniprod6-prod6}: \href{https://nova-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=68148}{NOVA-doc-68148}
+    \item $q_3$-$q_0$ space - truth v reco~\cite{gnissen-q3q0}: \href{https://nova-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=68569}{NOVA-doc-68569}
+    \item NuTree Prod5.1 v Prod6~\cite{gnissen-nutree}: \href{https://nova-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=68959}{NOVA-doc-68959}
+    \item Prod6 Xsec Syst Check from CAFs~\cite{gnissen-xsecsyst}: \href{https://nova-docdb.fnal.gov/cgi-bin/sso/ShowDocument?docid=69601}{NOVA-doc-69601}
+\end{itemize}
+
+\bibliographystyle{plain}
+\bibliography{summary-gnissen}
+
+
+\end{document}
